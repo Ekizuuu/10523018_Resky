@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekizu Game Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HalamanUtama.html">Produk/Jasa</a></li>
+                <li><a href="transaction.html">Input Transaksi</a></li>
+                <li><a href="invoice.html">Struk/Invoice</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="more-product.html">Produk Lainnya</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h1>Input Transaksi</h1>
+            <form id="transaction-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" required><br>
+
+                <label for="quantity">Jumlah:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required><br>
+
+                <input type="hidden" id="product-name" name="product-name">
+                <input type="hidden" id="product-price" name="product-price">
+
+                <button type="button" onclick="submitTransaction()">Checkout/Buat Pesanan</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; EKIZU GAME STORE</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
